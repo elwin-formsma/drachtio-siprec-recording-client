@@ -35,6 +35,7 @@ else {
 srf.use((req, res, next) => {
   const uri = Srf.parseUri(req.uri);
   if (uri) {
+    // console.log(uri.host);
     if (
       (config.has('local-dns-names') ? config.get('local-dns-names') : []).find((nm) => nm === uri.host) ||
       localHostPorts.find((hp) => hp.host === uri.host && hp.port == (uri.port || 5060))) {
