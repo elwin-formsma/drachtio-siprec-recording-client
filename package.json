@@ -27,8 +27,8 @@
   "homepage": "https://github.com/davehorton/drachtio-siprec-client#readme",
   "dependencies": {
     "config": "^3.0.0",
-    "drachtio-fsmrf": "^1.2.6",
-    "drachtio-srf": "^4.4.1",
+    "drachtio-fsmrf": "*",
+    "drachtio-srf": "*",
     "pino": "^5.10.1",
     "uuid": "^3.3.2"
   },
